@@ -1,5 +1,23 @@
 # Agent Check: TeamCity
 
+## Raw Power Games Notes
+Currently there are some issues with this integration (27/09/2023) but there is how to make it work
+
+* Install the latest version of the datadog agent and configure it according to the documentation
+
+* Copy the following files from this repo to the DataDog agent (C:\Program Files\Datadog\Datadog Agent\embedded3\Lib\site-packages\datadog_checks\teamcity)
+
+  * datadog_checks/teamcity/metrics.py
+  * datadog_checks/teamcity/teamcity_rest.py
+  * datadog_checks/teamcity/common.py
+
+
+
+
+
+
+
+
 ## Overview
 
 This integration connects to your TeamCity server to submit metrics, service checks, and events, allowing you to monitor the health of your TeamCity projects' build configurations, build runs, server resources, and more.
