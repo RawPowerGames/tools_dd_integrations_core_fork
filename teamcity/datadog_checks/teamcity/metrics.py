@@ -5,6 +5,21 @@ import re
 from copy import deepcopy
 
 STANDARD_PROMETHEUS_METRICS = {
+    'server_cleanup_lastStarted_startTimestamp_milliseconds': 'server.cleanup.lastStarted.startTimestamp.milliseconds',
+    'server_cleanup_lastFinished_startTimestamp_milliseconds': 'server.cleanup.lastFinished.startTimestamp.milliseconds',
+    'server_cleanup_lastFinished_finishTimestamp_milliseconds': 'server.cleanup.lastFinished.finishTimestamp.milliseconds',
+    'runningBuilds_numberOfUnprocessedMessages': 'runningBuilds.numberOfUnprocessedMessages',
+    'node_locks_taken': 'node.locks.taken',
+    'io_build_artifacts_writes_bytes': 'io.build.artifacts.writes.bytes',
+    'io_build_artifacts_reads_bytes': 'io.build.artifacts.reads.bytes',
+    'io_agent_updates_reads_bytes': 'io.agent.updates.reads.bytes',
+    'cloud_tccPluginsLoaded': 'cloud.tccPluginsLoaded',
+    'cloud_license_runningSelfHostedBuilds': 'cloud.license.runningSelfHostedBuilds',
+    'cleanup_build_processing': 'cleanup.build.processing',
+    'buildType_branches_updateTime_milliseconds': 'buildType.branches.updateTime.milliseconds',
+    'build_statistics_delay': 'build.statistics.delay',
+    'build_log_flowAwareIndex_init_time_milliseconds': 'build.log.flowAwareIndex.init.time.milliseconds',
+    'agents_cloud_starting': 'agents.cloud.starting',
     'agents_connected_authorized': 'agents.connected.authorized',
     'agents_running_builds': 'agents.running.builds',
     'buildConfigurations_active': 'build.configs.active',
